@@ -4,27 +4,23 @@
 const expect = require('expect');
 const arithmetic = require('../lib/arithmetic.js');
 
-describe('testing arithmetic', () => {
+describe('test arithmetic', () => {
 
-  describe('testing add', () => {
+  describe('test add', () => {
     it('should return 5', () => {
-      let result = arithmetic.add(2, 3);
-      expect(result).toEqual(5);
+      expect(arithmetic.add(2, 3)).toBe(5);
     });
     it('should return null', () => {
-      let result = arithmetic.add('bear', 'cub');
-      expect(result).toEqual(null);
+      expect(arithmetic.add('bear', 'cub')).toBe(null);
     });
   });
 
-  describe('testing sub', () => {
+  describe('test sub', () => {
     it('should return -1', () => {
-      let result = arithmetic.sub(2,3)
-      expect(result).toEqual(-1);
+      expect(arithmetic.sub(2,3)).toBe(-1);
     });
     it('should return null', () => {
-      let result = arithmetic.sub(true, 45)
-      expect(result).toEqual(null);
+      expect(arithmetic.sub(true, 45)).toBe(null);
     });
   });
 });

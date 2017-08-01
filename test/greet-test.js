@@ -4,15 +4,15 @@ const expect = require('expect');
 const greet = require('../lib/greet.js');
 
 describe('test greet', () => {
-
-    describe ('test hello', () => {
-        it('should return "Hello, world!"', () => {
-            let result = greet.hello('world!');
-            expect(result).toEqual('Hello, world!');
-        });
-        it('should return null', () => {
-            let result = greet.hello(true);
-            expect(result).toEqual(null);
-        });
-    });
+  it('should return "Hello, world!"', () => {
+    let result = greet('world!');
+    expect(result).toBe('Hello, world!');
+  });
+  it('should return null', () => {
+    let result = greet(true);
+    expect(greet(true)).toBe(null);
+    expect(greet({})).toBe(null);
+    expect(greet([])).toBe(null);
+    expect(greet(17)).toBe(null);
+  });
 });

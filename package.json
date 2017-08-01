@@ -4,6 +4,7 @@
   "description": "![CF](https://camo.githubusercontent.com/70edab54bba80edb7493cad3135e9606781cbb6b/687474703a2f2f692e696d6775722e636f6d2f377635415363382e706e67) 401 JS -- Class 01 node ecosystem  ===",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "mocha"
   },
   "repository": {
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/lizziegooding/lab-01-node-ecosystem/issues"
   },
-  "homepage": "https://github.com/lizziegooding/lab-01-node-ecosystem#readme"
+  "homepage": "https://github.com/lizziegooding/lab-01-node-ecosystem#readme",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  }
 }
